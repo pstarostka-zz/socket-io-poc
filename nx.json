@@ -12,9 +12,17 @@
   "npmScope": "chat-socket-io",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "YzdmODg1MjQtOGFkOC00YWIwLTllNGYtZjczZTU3NDVmZjA3fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -24,7 +32,9 @@
     },
     "client-e2e": {
       "tags": [],
-      "implicitDependencies": ["client"]
+      "implicitDependencies": [
+        "client"
+      ]
     },
     "api": {
       "tags": []
